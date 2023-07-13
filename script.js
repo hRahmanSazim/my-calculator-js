@@ -12,7 +12,7 @@ const calculate = (btnValue) => {
   } else if (btnValue === "AC") {
     output = "";
   } else if (btnValue === "DEL" || btnValue === "Backspace") {
-    output = output.slice(0, -1);
+    output = output.toString().slice(0, -1);
   } else {
     if (output === "" && operators.includes(btnValue)) return;
     output += btnValue;
