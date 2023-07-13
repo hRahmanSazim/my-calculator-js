@@ -15,6 +15,8 @@ const calculate = (btnValue) => {
     output = output.toString().slice(0, -1);
   } else {
     if (output === "" && operators.includes(btnValue)) return;
+    if (operators.includes(btnValue) && operators.includes(output.at(-1)))
+      return;
     output += btnValue;
   }
   display.value = output;
