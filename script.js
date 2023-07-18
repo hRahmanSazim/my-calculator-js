@@ -34,7 +34,6 @@ const calculate = (btnValue) => {
     output += btnValue;
   }
   display.value = output;
-  console.log(output);
 };
 
 buttons.forEach((button) => {
